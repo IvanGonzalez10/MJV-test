@@ -28,7 +28,7 @@ export const Link = styled(LinkRouter)`
   width: 100vw;
 
   &[aria-current] {
-    color: #cddc39;
+    color: #FF4800;
 
     &:after {
       ${fadeIn({ time: "0.5s" })};

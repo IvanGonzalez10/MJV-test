@@ -10,10 +10,10 @@ export const NavBar = () => {
       <Link to="/">
         <MdHome size={fontSize} />
       </Link>
-      <Link to="/profile">
+      <Link to="/categories">
         <MdList size={fontSize} />
       </Link>
-      <Link to="/instructions">
+      <Link to="/login">
         <MdAccountCircle size={fontSize} />
       </Link>
     </Nav>
