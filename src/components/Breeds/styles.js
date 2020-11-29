@@ -7,7 +7,7 @@ export const Div = styled.div`
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 25vh;
+  height: 20vh;
   background-color: #fff;
   font-family: Muli, Helvetica, Arial, sans-serif;
 `;
@@ -29,9 +29,18 @@ export const Select = styled.select`
 `;
 
 export const H1 = styled.h1`
-  font-size: 15px;
+  font-size: 20px;
   margin: 0;
-  font-weight: 750;
+  font-weight: 550;
   color: #000;
-  padding: 25px;
+  padding-left: 20px;
+  margin-bottom: 5px;
+`;
+
+export const H2 = styled.h2`
+  font-size: 15px;
+  margin: 10px;
+  font-weight: 450;
+  color: #000;
+  padding-left: 20px;
 `;

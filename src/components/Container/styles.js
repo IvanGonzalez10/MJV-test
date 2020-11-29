@@ -7,7 +7,7 @@ export const Div = styled.div`
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 50vh;
+  height: 55vh;
   background-color: #fff;
   font-family: Muli, Helvetica, Arial, sans-serif;
 `;
@@ -28,7 +28,7 @@ export const DivDos = styled.div`
 `;
 
 export const DivTres = styled.div`
-  margin: 15px 0 0 0;
+  margin: 10px 0 0 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -53,8 +53,17 @@ export const Img = styled.img`
 `;
 
 export const H1 = styled.h1`
+  font-size: 15px;
+  margin: 10px;
+  font-weight: 750;
+  color: #000;
+  padding-left: 25px;
+  top: 5px;
+`;
+
+export const H2 = styled.h2`
   font-size: 20px;
-  margin: 0;
+  margin: 10px 5px;
   font-weight: 750;
   color: #000;
   padding: 25px;
