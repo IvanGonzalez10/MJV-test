@@ -1,7 +1,9 @@
 import React from "react";
 import { Div, DivDos, Img, DivTres } from "./styles";
+import { Spinner } from "../../styles/Spinner";
 
-export const Container = ({ dog, updateDog }) => {
+export const Container = ({ dog, updateDog, loading }) => {
+  if (loading) return <Spinner />;
   return (
     <Div>
       <DivDos onClick={() => updateDog(dog.breed.id)}>
