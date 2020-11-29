@@ -15,8 +15,6 @@ export const Auth = () => {
     await firebase.auth().createUserWithEmailAndPassword(email, password);
   };
 
-  firebase.auth().onAuthStateChanged((user) => user && setUser(user.email));
-
   const Log = async () => {
     await firebase.auth().signInWithEmailAndPassword(email, password);
   };
@@ -24,6 +22,8 @@ export const Auth = () => {
   const logout = async () => {
     await firebase.auth().signOut();
   };
+
+  firebase.auth().onAuthStateChanged((user) => user && setUser(user.email));
 
   return (
     <Div>
@@ -47,7 +47,11 @@ export const Auth = () => {
           <Button onClick={submit}>Registrar</Button>
         </DivDos>
       )}
-      {user && <Button onClick={logout}>Cerrar Sesión</Button>}
+      {user && (
+        <Div>
+          <H2>Bienvenido: {user}</H2>
+          <Button onClick={logout}>Cerrar Sesión</Button>
+        </Div>)}
     </Div>
   );
 };
