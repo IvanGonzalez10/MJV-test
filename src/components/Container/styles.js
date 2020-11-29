@@ -7,11 +7,10 @@ export const Div = styled.div`
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 55vh;
+  height: 50vh;
   background-color: #fff;
   font-family: Muli, Helvetica, Arial, sans-serif;
 `;
-
 
 export const DivDos = styled.div`
   margin: 0 0 0 0;
@@ -23,7 +22,7 @@ export const DivDos = styled.div`
   height: 200px;
   background-color: #fefefe;
   border: 1px solid black;
-  border-radius: 5%;
+  border-radius: 10px;
   font-family: Muli, Helvetica, Arial, sans-serif;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.3);
 `;
@@ -38,7 +37,7 @@ export const DivTres = styled.div`
   height: 50px;
   background-color: #fefefe;
   border: 1px solid black;
-  border-radius: 5%;
+  border-radius: 25px;
   font-family: Muli, Helvetica, Arial, sans-serif;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.3);
 `;
@@ -51,4 +50,12 @@ export const Img = styled.img`
   align-items: center;
   width: 95%;
   height: 190px;
+`;
+
+export const H1 = styled.h1`
+  font-size: 20px;
+  margin: 0;
+  font-weight: 750;
+  color: #000;
+  padding: 25px;
 `;

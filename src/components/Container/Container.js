@@ -1,5 +1,5 @@
 import React from "react";
-import { Div, DivDos, Img, DivTres } from "./styles";
+import { Div, DivDos, Img, DivTres, H1 } from "./styles";
 import { Spinner } from "../../styles/Spinner";
 
 export const Container = ({ dog, updateDog, loading }) => {
@@ -10,7 +10,7 @@ export const Container = ({ dog, updateDog, loading }) => {
         <Img src={dog.dogImage} alt="Dog" />
       </DivDos>
       <DivTres>
-        <h1>{dog.breed.name}</h1>
+        <H1>{dog.breed.name}</H1>
       </DivTres>
     </Div>
   );

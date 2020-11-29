@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Select, Div } from "./styles";
+import { Select, Div, H1 } from "./styles";
 import { BreedsComm } from "../../Apis/BreedsComm";
 
 export const Breeds = ({ updateDog }) => {
@@ -23,6 +23,7 @@ export const Breeds = ({ updateDog }) => {
           </option>
         ))}
       </Select>
+      <H1>Clickea encima de la imagen para ver más fotos</H1>
     </Div>
   );
 };
