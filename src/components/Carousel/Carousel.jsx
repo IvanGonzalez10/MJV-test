@@ -100,7 +100,7 @@ export const Carousel = () => {
           backgroundColor: '#fafafa',
         }}
       >
-        Clickeame para ir a ver a tu raza favorita
+        Has click en la imagen para ir a ver a tu raza favorita
       </h1>
       <AutoPlaySwipeableViews
         axis={theme.direction === "rtl" ? "x-reverse" : "x"}

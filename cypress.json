@@ -1,0 +1,7 @@
+{
+  "baseUrl": "https://mjv-test.vercel.app",
+  "chromeWebSecurity": false,
+  "viewportWidth": 500,
+  "viweportHeight": 800
+}
+
