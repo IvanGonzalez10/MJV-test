@@ -23,7 +23,10 @@ export const Auth = () => {
     await firebase.auth().signOut();
   };
 
-  firebase.auth().onAuthStateChanged((user) => user && setUser(user.email));
+  firebase.auth().onAuthStateChanged((user) => {
+    user && setUser(user.email);
+    !user && setUser("");
+  });
 
   return (
     <Div>
@@ -43,7 +46,10 @@ export const Auth = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
           <Button onClick={Log}>Iniciar Sesión</Button>
-          <H2>Sino tienes cuenta registrate, ingresa tu correo y tu password y clickea en registrar</H2>
+          <H2>
+            Sino tienes cuenta registrate, ingresa tu correo y tu password y
+            clickea en registrar
+          </H2>
           <Button onClick={submit}>Registrar</Button>
         </DivDos>
       )}
@@ -51,7 +57,8 @@ export const Auth = () => {
         <Div>
           <H2>Bienvenido: {user}</H2>
           <Button onClick={logout}>Cerrar Sesión</Button>
-        </Div>)}
+        </Div>
+      )}
     </Div>
   );
 };
