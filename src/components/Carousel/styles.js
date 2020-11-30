@@ -1,16 +1,19 @@
 import styled from "styled-components";
 
 export const Div = styled.div`
-  width: 100vw;
-  height: 75vh;
-  color: "#fff";
-  text-align: center;
-  position: relative;
+  margin: 0 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 75px;
+  background-color: #fff;
+  border-bottom: 1px solid #000;
 `;
 
 export const Img = styled.img`
-  width: 100vh;
-  background-position: center;
+  width: 100%;
 `;
 
 export const DivCont = styled.div`
