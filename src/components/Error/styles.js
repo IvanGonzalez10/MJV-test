@@ -33,3 +33,16 @@ export const H3 = styled.h3`
   color: #F3F3F3;
   font-weight: 250;
 `;
+
+export const Button = styled.button`
+  width: 100px;
+  height: 30px;
+  margin-top: 40px;
+  background: #f3f3f3;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 250;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.87);
+`;
