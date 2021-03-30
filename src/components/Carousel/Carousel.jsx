@@ -18,10 +18,6 @@ const tutorialSteps = [
     imgPath: "/assets/gd3.jpg",
   },
   {
-    label: "Showcase - Pug",
-    imgPath: "/assets/pg.jpg",
-  },
-  {
     label: "Showcase - Chow Chow",
     imgPath: "/assets/cc.jpg",
   },
